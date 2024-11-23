@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Details using classes</title>
+        <link rel="stylesheet" href="style.css"/>
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 class="head">*** Student Details ***</h1>
+        </header>
+        <form action="">
+            <ul class="readingContainer">
+                <li>
+                    <label for="EmployeeName">Student Name <span>*</span></label>
+                    <input type="text" id="sName" maxlength="20" name="EmployeeName" />
+                </li>
+                <li>
+                    <label for="EmployeeAge">Student Age <span>*</span></label>
+                    <input type="text" id="sAge" maxlength="2" name="EmployeeAge" />
+                </li>
+                <li>
+                    <label for="gender">Gender :</label>
+                    <input type="radio" id="male" name="gender" value="male"  /><span>Male</span>
+                    <input type="radio" id="female" name="gender" value="female" /><span>Female</span>
+                </li> 
+                <li>
+                    <label for="standard"> Class :</label>
+                    <select class="dropdown" name="" id="sstandard">
+                      <option value="">Select your Class</option>
+                      <option value="Class I">Class I</option>
+                      <option value="Class II">Class II</option>
+                      <option value="Class III">Class III</option>
+                      <option value="Class IV">Class IV</option>
+                      <option value="Class V">Class V</option>
+                      <option value="Class VI">Class VI</option>
+                    </select>
+                  </li>
+                  <li>
+                    <label for="maths">Maths :</label>
+                    <input type="text" id="smaths" maxlength="3" name="maths" />
+                    <label for="science">Science :</label>
+                    <input type="text" id="sscience" maxlength="3" name="science" />
+                </li>
+                <li>
+                    <label for="social">Social :</label>
+                    <input type="text" id="ssocial" maxlength="3" name="social" />
+                    <label for="evs">Evs :</label>
+                    <input type="text" id="sevs" maxlength="3" name="evs" />
+                </li>
+                <li id="btn-container">
+                    <input type="button" class="btn1" value="Get Progress card"/>
+                    <input type="reset" class="btn2" value="Reset" />
+                </li>
+            </ul>
+        </form>
+        <hr>
+            <div class="progress-container1">
+                <h3 class="progressHeader">Your Progress Report</h3>
+                <ul class="studentform">
+                    <li>
+                        Student name is <span id="dname"></span>
+                    </li>
+                    <li>
+                        Student Age is <span id="dage"></span>
+                    </li>
+                    <li>
+                        Gender is <span id="dgen"></span>
+                    </li>
+                    <li>
+                        Class  <span id="dclass"></span>
+                    </li>
+                    <li>
+                        Maths <span id="dmaths"></span>
+                    </li>
+                    <li>
+                        Science <span id="dscience"></span>
+                    </li>
+                    <li>
+                        Social <span id="dsocial"></span>
+                    </li>
+                    <li>
+                        EVS <span id="devs"></span>
+                    </li>
+                    <li>
+                        Total Marks is  <span id="dtotal"></span>
+                    </li>
+                    <li>
+                        Avg is <span id="davg"></span>
+                    </li>
+                    <li>
+                        Grade is <span id="dgrade"></span>
+                    </li>
+                    <li>
+                        Remarks is <span id="dmsg"></span>
+                    </li>
+                   
+                </ul>
+            </div>
+ 
+        <script src="app.js"></script>
+    </body>
+</html>
